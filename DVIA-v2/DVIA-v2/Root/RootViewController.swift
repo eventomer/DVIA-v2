@@ -87,8 +87,6 @@ extension RootViewController: SideMenuViewControllerDelegate, ContainerViewContr
             showInsecureDataStorage()
         case .jailbreakDetection:
             showJailbreakDetection()
-        case .excessivePermissions:
-            showExcessivePermissions()
         case .runtimeManipulation:
             showRuntimeManipulation()
         case .antiAntiHookingDebugging:
@@ -169,13 +167,6 @@ extension RootViewController: SideMenuViewControllerDelegate, ContainerViewContr
         let storyboard = UIStoryboard(name: Storyboard.donate.name, bundle: nil)
         if let controller = storyboard.instantiateInitialViewController() as? UINavigationController {
             addControllerAsChild(childController: controller)}
-    }
-    
-    func showExcessivePermissions() {
-        let storyboard = UIStoryboard(name: Storyboard.excessivePermissions.name, bundle: nil)
-        if let controller = storyboard.instantiateInitialViewController() as? UINavigationController {
-            addControllerAsChild(childController: controller)
-        }
     }
     
     func showRuntimeManipulation() {

@@ -19,14 +19,12 @@
 		6E6C0DCE2074F36F00C5C4E3 /* BrokenCryptographyPinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C0DCD2074F36F00C5C4E3 /* BrokenCryptographyPinDetailsViewController.swift */; };
 		6EADF0782083674600A4AB1C /* slider-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EADF0762083674300A4AB1C /* slider-active.png */; };
 		6EADF0792083674600A4AB1C /* slider-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EADF0772083674500A4AB1C /* slider-active@2x.png */; };
-		6EB619DB205E352A00C42DE4 /* CameraPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB619DA205E352A00C42DE4 /* CameraPermissionsViewController.swift */; };
 		6EF0C419205FD59A0089050C /* DonateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0C418205FD59A0089050C /* DonateDetailsViewController.swift */; };
 		6EF0C42120622B590089050C /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0C42020622B580089050C /* fingerprint.png */; };
 		6EF0C423206234BD0089050C /* TouchIDAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0C422206234BD0089050C /* TouchIDAuthentication.m */; };
 		6EFF445D206CD4D7007BE6C6 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF445C206CD4D7007BE6C6 /* menu.png */; };
 		6EFF445F206CFA20007BE6C6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF445E206CFA20007BE6C6 /* back.png */; };
-		F65219E5205A56CB00D0A345 /* ExcessivePermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65219E4205A56CB00D0A345 /* ExcessivePermissionsViewController.swift */; };
-		F65219E9205A599C00D0A345 /* ExcessivePermissions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65219E8205A599B00D0A345 /* ExcessivePermissions.storyboard */; };
+		F1A8EF7D285506E4001E6786 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF7C285506E4001E6786 /* Launch Screen.storyboard */; };
 		F65A37F420652EF3005966DA /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F65A37F320652EF3005966DA /* DeviceInfo.m */; };
 		F65AC873202FA37500E4088A /* DVIA_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65AC871202FA37500E4088A /* DVIA_v2.xcdatamodeld */; };
 		F669D003206645C6001AEBEE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669D002206645C6001AEBEE /* Obfuscator.swift */; };
@@ -184,9 +182,7 @@
 		F6E645C9202FBC6000884A43 /* PListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E64596202FBC6000884A43 /* PListViewController.swift */; };
 		F6E645CA202FBC6000884A43 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E64597202FBC6000884A43 /* KeychainViewController.swift */; };
 		F6E645CB202FBC6000884A43 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E64598202FBC6000884A43 /* UserDefaultsViewController.swift */; };
-		F6E645CC202FBC6000884A43 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E64599202FBC6000884A43 /* RealmViewController.swift */; };
 		F6E645CD202FBC6000884A43 /* InsecureDataStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E6459A202FBC6000884A43 /* InsecureDataStorageViewController.swift */; };
-		F6E645CE202FBC6000884A43 /* CouchbaseLiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E6459B202FBC6000884A43 /* CouchbaseLiteViewController.swift */; };
 		F6E645CF202FBC6000884A43 /* InsecureDataStorage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E6459C202FBC6000884A43 /* InsecureDataStorage.storyboard */; };
 		F6E645D0202FBC6000884A43 /* BrokenCryptographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E6459F202FBC6000884A43 /* BrokenCryptographyViewController.swift */; };
 		F6E645D1202FBC6000884A43 /* BrokenCryptographyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645A0202FBC6000884A43 /* BrokenCryptographyDetailsViewController.swift */; };
@@ -196,7 +192,6 @@
 		F6E645D5202FBC6000884A43 /* SecurityDecisionsViewUntrustedInputDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645A6202FBC6000884A43 /* SecurityDecisionsViewUntrustedInputDetailViewController.swift */; };
 		F6E645D7202FBC6000884A43 /* JailbreakDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645AA202FBC6000884A43 /* JailbreakDetectionViewController.swift */; };
 		F6E645D8202FBC6000884A43 /* JailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E645AD202FBC6000884A43 /* JailbreakDetection.m */; };
-		F6E645E2202FBCAB00884A43 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645DB202FBCAB00884A43 /* RealmUser.swift */; };
 		F6E645E3202FBCAB00884A43 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645DD202FBCAB00884A43 /* CoreDataStack.swift */; };
 		F6E645E4202FBCAB00884A43 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645DE202FBCAB00884A43 /* User+CoreDataProperties.swift */; };
 		F6E645E5202FBCAB00884A43 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E645DF202FBCAB00884A43 /* User+CoreDataClass.swift */; };
@@ -223,7 +218,6 @@
 		6E6C0DCD2074F36F00C5C4E3 /* BrokenCryptographyPinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenCryptographyPinDetailsViewController.swift; sourceTree = "<group>"; };
 		6EADF0762083674300A4AB1C /* slider-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-active.png"; sourceTree = "<group>"; };
 		6EADF0772083674500A4AB1C /* slider-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-active@2x.png"; sourceTree = "<group>"; };
-		6EB619DA205E352A00C42DE4 /* CameraPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionsViewController.swift; sourceTree = "<group>"; };
 		6EF0C418205FD59A0089050C /* DonateDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateDetailsViewController.swift; sourceTree = "<group>"; };
 		6EF0C42020622B580089050C /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fingerprint.png; sourceTree = "<group>"; };
 		6EF0C422206234BD0089050C /* TouchIDAuthentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDAuthentication.m; sourceTree = "<group>"; };
@@ -232,8 +226,7 @@
 		6EFF445E206CFA20007BE6C6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		92BBC104309970BC081E4760 /* Pods_DVIA_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DVIA_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FAF81124FA42DB50364D82 /* Pods-DVIA-v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVIA-v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVIA-v2/Pods-DVIA-v2.release.xcconfig"; sourceTree = "<group>"; };
-		F65219E4205A56CB00D0A345 /* ExcessivePermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcessivePermissionsViewController.swift; sourceTree = "<group>"; };
-		F65219E8205A599B00D0A345 /* ExcessivePermissions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExcessivePermissions.storyboard; sourceTree = "<group>"; };
+		F1A8EF7C285506E4001E6786 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F65A37F320652EF3005966DA /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		F65A37F520652F18005966DA /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		F65AC867202FA37500E4088A /* DVIA-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DVIA-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -514,9 +507,7 @@
 		F6E64596202FBC6000884A43 /* PListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListViewController.swift; sourceTree = "<group>"; };
 		F6E64597202FBC6000884A43 /* KeychainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
 		F6E64598202FBC6000884A43 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
-		F6E64599202FBC6000884A43 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		F6E6459A202FBC6000884A43 /* InsecureDataStorageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsecureDataStorageViewController.swift; sourceTree = "<group>"; };
-		F6E6459B202FBC6000884A43 /* CouchbaseLiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseLiteViewController.swift; sourceTree = "<group>"; };
 		F6E6459C202FBC6000884A43 /* InsecureDataStorage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InsecureDataStorage.storyboard; sourceTree = "<group>"; };
 		F6E6459F202FBC6000884A43 /* BrokenCryptographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokenCryptographyViewController.swift; sourceTree = "<group>"; };
 		F6E645A0202FBC6000884A43 /* BrokenCryptographyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokenCryptographyDetailsViewController.swift; sourceTree = "<group>"; };
@@ -527,7 +518,6 @@
 		F6E645AA202FBC6000884A43 /* JailbreakDetectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailbreakDetectionViewController.swift; sourceTree = "<group>"; };
 		F6E645AC202FBC6000884A43 /* JailbreakDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakDetection.h; sourceTree = "<group>"; };
 		F6E645AD202FBC6000884A43 /* JailbreakDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakDetection.m; sourceTree = "<group>"; };
-		F6E645DB202FBCAB00884A43 /* RealmUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		F6E645DD202FBCAB00884A43 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F6E645DE202FBCAB00884A43 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6E645DF202FBCAB00884A43 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -606,24 +596,6 @@
 				C9FAF81124FA42DB50364D82 /* Pods-DVIA-v2.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F65219E2205A563000D0A345 /* ExcessivePermissions */ = {
-			isa = PBXGroup;
-			children = (
-				F65219E8205A599B00D0A345 /* ExcessivePermissions.storyboard */,
-				F65219E3205A565800D0A345 /* Controller */,
-			);
-			path = ExcessivePermissions;
-			sourceTree = "<group>";
-		};
-		F65219E3205A565800D0A345 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F65219E4205A56CB00D0A345 /* ExcessivePermissionsViewController.swift */,
-				6EB619DA205E352A00C42DE4 /* CameraPermissionsViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		F65AC85E202FA37500E4088A = {
@@ -742,6 +714,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DE6F26202FA4DD00A3A757 /* Home.storyboard */,
+				F1A8EF7C285506E4001E6786 /* Launch Screen.storyboard */,
 				F6DE6F27202FA4DD00A3A757 /* HomeViewController.swift */,
 				F65A37F320652EF3005966DA /* DeviceInfo.m */,
 				F65A37F520652F18005966DA /* DeviceInfo.h */,
@@ -819,7 +792,6 @@
 				F6C8AA27205D329F001E1CCB /* TouchIDBypass */,
 				F6C8AA1E205D2406001E1CCB /* Phishing */,
 				F6C8AA16205A9B13001E1CCB /* Donate */,
-				F65219E2205A563000D0A345 /* ExcessivePermissions */,
 				F6E64567202FBC6000884A43 /* Application Patching */,
 				F6E6456C202FBC6000884A43 /* Attacking Third Party Libraries */,
 				F6E6459D202FBC6000884A43 /* Broken Cryptography */,
@@ -1457,9 +1429,7 @@
 				F6E64596202FBC6000884A43 /* PListViewController.swift */,
 				F6E64597202FBC6000884A43 /* KeychainViewController.swift */,
 				F6E64598202FBC6000884A43 /* UserDefaultsViewController.swift */,
-				F6E64599202FBC6000884A43 /* RealmViewController.swift */,
 				F6E6459A202FBC6000884A43 /* InsecureDataStorageViewController.swift */,
-				F6E6459B202FBC6000884A43 /* CouchbaseLiteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1532,19 +1502,10 @@
 		F6E645D9202FBCAB00884A43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F6E645DA202FBCAB00884A43 /* RealmUser */,
 				F6E645DC202FBCAB00884A43 /* CoreDataClasses */,
 				F6E645E0202FBCAB00884A43 /* Model.xcdatamodeld */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F6E645DA202FBCAB00884A43 /* RealmUser */ = {
-			isa = PBXGroup;
-			children = (
-				F6E645DB202FBCAB00884A43 /* RealmUser.swift */,
-			);
-			path = RealmUser;
 			sourceTree = "<group>";
 		};
 		F6E645DC202FBCAB00884A43 /* CoreDataClasses */ = {
@@ -1568,7 +1529,6 @@
 				F65AC863202FA37500E4088A /* Sources */,
 				F65AC864202FA37500E4088A /* Frameworks */,
 				F65AC865202FA37500E4088A /* Resources */,
-				179AFFE713A4DAA32ECBFEA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1586,12 +1546,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = HighAltitudeHacks;
 				TargetAttributes = {
 					F65AC866202FA37500E4088A = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1340;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1649,8 +1609,8 @@
 				F6E6455F202FBB6700884A43 /* README.txt in Resources */,
 				F6ED006C206F8337000D1E99 /* main-bg.png in Resources */,
 				6EADF0792083674600A4AB1C /* slider-active@2x.png in Resources */,
+				F1A8EF7D285506E4001E6786 /* Launch Screen.storyboard in Resources */,
 				6EF0C42120622B590089050C /* fingerprint.png in Resources */,
-				F65219E9205A599C00D0A345 /* ExcessivePermissions.storyboard in Resources */,
 				F6E645CF202FBC6000884A43 /* InsecureDataStorage.storyboard in Resources */,
 				F6DE6F88202FA4DE00A3A757 /* Assets.xcassets in Resources */,
 				F6DE6F80202FA4DE00A3A757 /* LearniOSApplicationSecurity.storyboard in Resources */,
@@ -1660,32 +1620,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		179AFFE713A4DAA32ECBFEA9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DVIA-v2/Pods-DVIA-v2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
-				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DVIA-v2/Pods-DVIA-v2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		83BD5C4E9B4F79EB2586E3F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1724,7 +1658,6 @@
 				F6E6453F202FBB6700884A43 /* YapDatabaseRelationshipTransaction.m in Sources */,
 				F6E64510202FBB6700884A43 /* YapDatabaseLogging.m in Sources */,
 				F6E645D7202FBC6000884A43 /* JailbreakDetectionViewController.swift in Sources */,
-				F6E645CC202FBC6000884A43 /* RealmViewController.swift in Sources */,
 				F6E64537202FBB6700884A43 /* YapDatabaseViewPage.mm in Sources */,
 				F6E64511202FBB6700884A43 /* YapDatabaseSearchResultsView.m in Sources */,
 				F6E645C9202FBC6000884A43 /* PListViewController.swift in Sources */,
@@ -1822,9 +1755,7 @@
 				F6E6455C202FBB6700884A43 /* DDContextFilterLogFormatter.m in Sources */,
 				F6E64514202FBB6700884A43 /* YapDatabaseSearchResultsViewConnection.m in Sources */,
 				F6E645B6202FBC6000884A43 /* LoginValidate.m in Sources */,
-				F6E645CE202FBC6000884A43 /* CouchbaseLiteViewController.swift in Sources */,
 				F6E64523202FBB6700884A43 /* YapDatabaseCloudKitConnection.m in Sources */,
-				F65219E5205A56CB00D0A345 /* ExcessivePermissionsViewController.swift in Sources */,
 				F6C8AA21205D2424001E1CCB /* PhishingViewController.swift in Sources */,
 				F69D6EDA2065762E00002381 /* SensitiveInformationInMemoryDetailsViewController.swift in Sources */,
 				F6DE6F7A202FA4DE00A3A757 /* UIViewController+Helper.swift in Sources */,
@@ -1836,7 +1767,6 @@
 				F6C8AA2C205D32CB001E1CCB /* TouchIDBypassViewController.swift in Sources */,
 				F6DE6F82202FA4DE00A3A757 /* SideMenuViewController.swift in Sources */,
 				F6E64557202FBB6700884A43 /* RNEncryptor.m in Sources */,
-				F6E645E2202FBCAB00884A43 /* RealmUser.swift in Sources */,
 				F6E64518202FBB6700884A43 /* YDBCKMappingTableInfo.m in Sources */,
 				F6E64516202FBB6700884A43 /* YapDatabaseCloudKitOptions.m in Sources */,
 				F6E645B2202FBC6000884A43 /* AttackingThirdPartyViewController.swift in Sources */,
@@ -1848,7 +1778,6 @@
 				F6E64530202FBB6700884A43 /* YapDatabaseSecondaryIndexConnection.m in Sources */,
 				F669D003206645C6001AEBEE /* Obfuscator.swift in Sources */,
 				6E6413A12084C19E0033E2A0 /* FlurryLeakDetailsViewController.swift in Sources */,
-				6EB619DB205E352A00C42DE4 /* CameraPermissionsViewController.swift in Sources */,
 				F6E6453E202FBB6700884A43 /* YapDatabaseView.m in Sources */,
 				F6E64517202FBB6700884A43 /* YapDatabaseCloudKitTypes.m in Sources */,
 				F6E64520202FBB6700884A43 /* YDBCKChangeSet.m in Sources */,
@@ -1903,6 +1832,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1910,8 +1840,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1937,7 +1869,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1960,6 +1892,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1967,8 +1900,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1988,7 +1923,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -2001,20 +1936,19 @@
 			baseConfigurationReference = 06128A191A180E39D5A8BB42 /* Pods-DVIA-v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J63Q35M68Q;
 				INFOPLIST_FILE = "DVIA-v2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.highaltitudehacks.DVIAswiftv2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webos.virtual-popit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "DVIA-v2/DVIA-v2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2024,19 +1958,18 @@
 			baseConfigurationReference = C9FAF81124FA42DB50364D82 /* Pods-DVIA-v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J63Q35M68Q;
 				INFOPLIST_FILE = "DVIA-v2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.highaltitudehacks.DVIAswiftv2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webos.virtual-popit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "DVIA-v2/DVIA-v2-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

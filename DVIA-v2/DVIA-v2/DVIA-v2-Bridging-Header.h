@@ -9,7 +9,6 @@
 #include "TouchIDAuthentication.h"
 #include "PDKeychainBindings.h"
 #include "LoginValidate.h"
-#import <CouchbaseLite/CouchbaseLite.h>
 #import <CommonCrypto/CommonCrypto.h>
 #include "YapDatabase.h"
 #include "RNEncryptor.h"

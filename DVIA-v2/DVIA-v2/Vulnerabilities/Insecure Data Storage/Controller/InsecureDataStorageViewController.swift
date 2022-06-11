@@ -21,9 +21,6 @@ enum segueIdentifier: Int {
     case keychain
     case coreData
     case webKit
-    case realm
-    case couchbase
-    case yapDatabase
     
     var identifier: String {
         switch self {
@@ -37,17 +34,11 @@ enum segueIdentifier: Int {
             return "coreDataSegueIdentifier"
         case .webKit:
             return "webkitSegueIdentifier"
-        case .realm:
-            return "realmSegueIdentifier"
-        case .couchbase:
-            return "couchbaseSegueIdentifier"
-        case .yapDatabase:
-            return "yapDatabaseSegueIdentifier"
         }
     }
 }
 
-fileprivate var vulnerabilities = ["Plist","UserDefaults","Keychain","Core Data","Webkit Caching","Realm","Couchbase Lite","YapDatabase"]
+fileprivate var vulnerabilities = ["Plist","UserDefaults","Keychain","Core Data","Webkit Caching"]
 
 class InsecureDataStorageViewController: UIViewController {
     
@@ -58,8 +49,8 @@ class InsecureDataStorageViewController: UIViewController {
         //Bug Fix if view goes under the navigation bar
         self.edgesForExtendedLayout = []
         let button = UIButton.init(type: .custom)
-        button.setImage(UIImage(named: "menu.png"), for: UIControlState.normal)
-        button.addTarget(self, action: #selector(menuTapped(_:)), for: UIControlEvents.touchUpInside)
+        button.setImage(UIImage(named: "menu.png"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(menuTapped(_:)), for: UIControl.Event.touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: 28, height: 28)
         button.widthAnchor.constraint(equalToConstant: 28).isActive = true
         button.heightAnchor.constraint(equalToConstant: 28).isActive = true
@@ -68,7 +59,7 @@ class InsecureDataStorageViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = barButton
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -122,12 +113,6 @@ extension InsecureDataStorageViewController: UITableViewDataSource, UITableViewD
             performSegue(withIdentifier: segueIdentifier.coreData.identifier, sender: indexPath.item)
         case .webKit:
             performSegue(withIdentifier: segueIdentifier.webKit.identifier, sender: indexPath.item)
-        case .realm:
-            performSegue(withIdentifier: segueIdentifier.realm.identifier, sender: indexPath.item)
-        case .couchbase:
-            performSegue(withIdentifier: segueIdentifier.couchbase.identifier, sender: indexPath.item)
-        case .yapDatabase:
-            performSegue(withIdentifier: segueIdentifier.yapDatabase.identifier, sender: indexPath.item)
         }
 
     }

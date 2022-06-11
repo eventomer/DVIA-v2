@@ -14,8 +14,14 @@
 
 
 import UIKit
-import Parse
 import os.log
+
+struct LoginUserInput: Codable {
+    let name: String?
+    let password: String?
+    let phone: String?
+    let email: String?
+}
 
 class DeviceLogsViewController: UIViewController, UITextFieldDelegate {
     
@@ -41,20 +47,17 @@ class DeviceLogsViewController: UIViewController, UITextFieldDelegate {
             return
         }
         signUpButton.setTitle("Signing Up ...", for: .normal)
-        let user = PFObject(className: "Person")
-        user["name"] = nameTextField.text
-        user["password"] = passwordTextField.text
-        user["phone"] = phoneNoTextField.text
-        user["email"] = emailTextField.text
-        print("user saved: \(user.description)")
-        user.saveInBackground(block: {(_ succeeded: Bool, _ error: Error?) -> Void in
-            if succeeded {
-                DVIAUtilities.showAlert(title: "Success", message: "User signed up successfully, look for the logs now", viewController: self)
-                os_log("Saved user info: %@",user.description)
-            } else {
-                DVIAUtilities.showAlert(title: "Oops", message: "Sign Up failed.", viewController: self)
-            }
-            self.signUpButton.setTitle("Sign Up", for: .normal)
-        })
+        let user = LoginUserInput(
+            name: nameTextField.text,
+            password: passwordTextField.text,
+            phone: phoneNoTextField.text,
+            email: emailTextField.text
+        )
+        print("user saved: \(user)")
+        DVIAUtilities.showAlert(title: "Success", message: "User signed up successfully, look for the logs now", viewController: self)
+        if let jsonData = try? JSONEncoder().encode(user), let jsonString = String(data: jsonData, encoding: .utf8) {
+            os_log("Saved user info: %@", jsonString)
+        }
+        self.signUpButton.setTitle("Sign Up", for: .normal)
     }
 }

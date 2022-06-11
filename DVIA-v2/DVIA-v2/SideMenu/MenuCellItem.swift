@@ -22,7 +22,6 @@ enum MenuCellItem {
     case home
     case insecureDataStorage
     case jailbreakDetection
-    case excessivePermissions
     case runtimeManipulation
     case binaryProtection
     case antiAntiHookingDebugging
@@ -46,8 +45,6 @@ enum MenuCellItem {
             return "Local Data Storage"
         case .jailbreakDetection:
             return "Jailbreak Detection"
-        case .excessivePermissions:
-            return "Excessive Permissions"
         case .antiAntiHookingDebugging:
             return "Anti Anti Hooking/Debugging"
         case .runtimeManipulation:
