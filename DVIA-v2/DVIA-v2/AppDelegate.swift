@@ -13,6 +13,8 @@
  
 
 import UIKit
+import os.log
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,15 +26,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white , NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 20)!]
         navigationBarAppearace.titleTextAttributes = textAttributes
         
+        printLogs()
         return true
+    }
+    
+    private func printLogs() {
+        let user = LoginUserInput(
+            name: "tomer",
+            password: "secret-password",
+            phone: "0501234567",
+            email: "tomer@example.com"
+        )
+        if let jsonData = try? JSONEncoder().encode(user), let jsonString = String(data: jsonData, encoding: .utf8) {
+            os_log("Current user info: %@", jsonString)
+        }
+        
+        let isPremiumUser = UserDefaults.standard.bool(forKey: "isPremiumUser")
+        os_log("isPremiumUser: \(isPremiumUser)")
+        
+        os_log("did unlock product1? \(InAppPurchaseManager.shared.hasItemBeenPurchased(itemID: 1))")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
     
-        let splitUrl = url.absoluteString.components(separatedBy: "/phone/call_number/")
-        if ((Int(splitUrl[1])) != nil){
+        if url.absoluteString.contains("phone/call_number") {
             //Valid URL, since the argument is a number
-            let alertController = UIAlertController(title: "Success!", message: "Calling \(splitUrl[1]). Ring Ring !!!", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Success!", message: "Calling \(url.lastPathComponent). Ring Ring !!!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+            alertController.addAction(okAction)
+            window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        } else if url.absoluteString.contains("secret-developer-mode") {
+            let alertController = UIAlertController(title: "Developer Mode!", message: "You are now under developer mode", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
             alertController.addAction(okAction)
             window?.rootViewController?.present(alertController, animated: true, completion: nil)

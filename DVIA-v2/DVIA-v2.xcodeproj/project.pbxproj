@@ -25,6 +25,12 @@
 		6EFF445D206CD4D7007BE6C6 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF445C206CD4D7007BE6C6 /* menu.png */; };
 		6EFF445F206CFA20007BE6C6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF445E206CFA20007BE6C6 /* back.png */; };
 		F1A8EF7D285506E4001E6786 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF7C285506E4001E6786 /* Launch Screen.storyboard */; };
+		F1A8EF7F285518EF001E6786 /* api-key.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF7E285518EF001E6786 /* api-key.txt */; };
+		F1A8EF8128551918001E6786 /* aws-access-key in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF8028551918001E6786 /* aws-access-key */; };
+		F1A8EF832855197C001E6786 /* aws-secret-key in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF822855197C001E6786 /* aws-secret-key */; };
+		F1A8EF8628551A4E001E6786 /* ssh in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF8428551A4E001E6786 /* ssh */; };
+		F1A8EF8728551A4E001E6786 /* ssh.pub in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF8528551A4E001E6786 /* ssh.pub */; };
+		F1A8EF8928551F7A001E6786 /* InAppPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */; };
 		F65A37F420652EF3005966DA /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F65A37F320652EF3005966DA /* DeviceInfo.m */; };
 		F65AC873202FA37500E4088A /* DVIA_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65AC871202FA37500E4088A /* DVIA_v2.xcdatamodeld */; };
 		F669D003206645C6001AEBEE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669D002206645C6001AEBEE /* Obfuscator.swift */; };
@@ -227,6 +233,12 @@
 		92BBC104309970BC081E4760 /* Pods_DVIA_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DVIA_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FAF81124FA42DB50364D82 /* Pods-DVIA-v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVIA-v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVIA-v2/Pods-DVIA-v2.release.xcconfig"; sourceTree = "<group>"; };
 		F1A8EF7C285506E4001E6786 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F1A8EF7E285518EF001E6786 /* api-key.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "api-key.txt"; sourceTree = "<group>"; };
+		F1A8EF8028551918001E6786 /* aws-access-key */ = {isa = PBXFileReference; lastKnownFileType = text; path = "aws-access-key"; sourceTree = "<group>"; };
+		F1A8EF822855197C001E6786 /* aws-secret-key */ = {isa = PBXFileReference; lastKnownFileType = text; path = "aws-secret-key"; sourceTree = "<group>"; };
+		F1A8EF8428551A4E001E6786 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
+		F1A8EF8528551A4E001E6786 /* ssh.pub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh.pub; sourceTree = "<group>"; };
+		F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseManager.swift; sourceTree = "<group>"; };
 		F65A37F320652EF3005966DA /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		F65A37F520652F18005966DA /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		F65AC867202FA37500E4088A /* DVIA-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DVIA-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -634,6 +646,11 @@
 				F6DE6F40202FA4DE00A3A757 /* Vulnerabilities */,
 				F65AC871202FA37500E4088A /* DVIA_v2.xcdatamodeld */,
 				F6DE6F24202FA4DC00A3A757 /* DVIA-v2-Bridging-Header.h */,
+				F1A8EF7E285518EF001E6786 /* api-key.txt */,
+				F1A8EF8028551918001E6786 /* aws-access-key */,
+				F1A8EF822855197C001E6786 /* aws-secret-key */,
+				F1A8EF8428551A4E001E6786 /* ssh */,
+				F1A8EF8528551A4E001E6786 /* ssh.pub */,
 			);
 			path = "DVIA-v2";
 			sourceTree = "<group>";
@@ -1303,6 +1320,7 @@
 			children = (
 				F6E64572202FBC6000884A43 /* Controller */,
 				F6E64575202FBC6000884A43 /* Objective-C Methods */,
+				F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */,
 			);
 			path = "Runtime Manipulation";
 			sourceTree = "<group>";
@@ -1593,12 +1611,15 @@
 				F6E645D2202FBC6000884A43 /* BrokenCryptography.storyboard in Resources */,
 				F6ED006E206F8337000D1E99 /* main-bg@2x.png in Resources */,
 				F6ED006F206F8337000D1E99 /* slider-bg@2x.png in Resources */,
+				F1A8EF8128551918001E6786 /* aws-access-key in Resources */,
 				F6E645AF202FBC6000884A43 /* ApplicationPatching.storyboard in Resources */,
 				F6C8AA1B205A9BE3001E1CCB /* Donate.storyboard in Resources */,
 				6E30A0A820874C34007534D8 /* AppIcons in Resources */,
+				F1A8EF8728551A4E001E6786 /* ssh.pub in Resources */,
 				F6E645B1202FBC6000884A43 /* AttackingThirdPartyLibraries.storyboard in Resources */,
 				F6DE6F85202FA4DE00A3A757 /* Root.storyboard in Resources */,
 				6EADF0782083674600A4AB1C /* slider-active.png in Resources */,
+				F1A8EF8628551A4E001E6786 /* ssh in Resources */,
 				F6C8AA37205D80D5001E1CCB /* BinaryProtection.storyboard in Resources */,
 				6E3D0559207E14DE000395C2 /* example.der in Resources */,
 				F6E64550202FBB6700884A43 /* LICENSE.txt in Resources */,
@@ -1606,12 +1627,14 @@
 				F6E645B9202FBC6000884A43 /* SensitiveInformation.storyboard in Resources */,
 				F6C8AA25205D2CBF001E1CCB /* JailbreakDetection.storyboard in Resources */,
 				F6E645C3202FBC6000884A43 /* ClientSideInjection.storyboard in Resources */,
+				F1A8EF832855197C001E6786 /* aws-secret-key in Resources */,
 				F6E6455F202FBB6700884A43 /* README.txt in Resources */,
 				F6ED006C206F8337000D1E99 /* main-bg.png in Resources */,
 				6EADF0792083674600A4AB1C /* slider-active@2x.png in Resources */,
 				F1A8EF7D285506E4001E6786 /* Launch Screen.storyboard in Resources */,
 				6EF0C42120622B590089050C /* fingerprint.png in Resources */,
 				F6E645CF202FBC6000884A43 /* InsecureDataStorage.storyboard in Resources */,
+				F1A8EF7F285518EF001E6786 /* api-key.txt in Resources */,
 				F6DE6F88202FA4DE00A3A757 /* Assets.xcassets in Resources */,
 				F6DE6F80202FA4DE00A3A757 /* LearniOSApplicationSecurity.storyboard in Resources */,
 			);
@@ -1701,6 +1724,7 @@
 				F6E6451C202FBB6700884A43 /* YDBCKChangeQueue.m in Sources */,
 				F6E6452D202FBB6700884A43 /* YapDatabaseHooksConnection.m in Sources */,
 				F6E6451A202FBB6700884A43 /* YDBCKChangeRecord.m in Sources */,
+				F1A8EF8928551F7A001E6786 /* InAppPurchaseManager.swift in Sources */,
 				F6E6451D202FBB6700884A43 /* YDBCKMergeInfo.m in Sources */,
 				F6E64544202FBB6700884A43 /* YapDatabaseFullTextSearchHandler.m in Sources */,
 				F6E6453C202FBB6700884A43 /* YapDatabaseViewTransaction.m in Sources */,
