@@ -30,7 +30,7 @@
 		F1A8EF832855197C001E6786 /* aws-secret-key in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF822855197C001E6786 /* aws-secret-key */; };
 		F1A8EF8628551A4E001E6786 /* ssh in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF8428551A4E001E6786 /* ssh */; };
 		F1A8EF8728551A4E001E6786 /* ssh.pub in Resources */ = {isa = PBXBuildFile; fileRef = F1A8EF8528551A4E001E6786 /* ssh.pub */; };
-		F1A8EF8928551F7A001E6786 /* InAppPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */; };
+		F1A8EF8C2856070D001E6786 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A8EF8B2856070D001E6786 /* InAppPurchaseManager.m */; };
 		F65A37F420652EF3005966DA /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F65A37F320652EF3005966DA /* DeviceInfo.m */; };
 		F65AC873202FA37500E4088A /* DVIA_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65AC871202FA37500E4088A /* DVIA_v2.xcdatamodeld */; };
 		F669D003206645C6001AEBEE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669D002206645C6001AEBEE /* Obfuscator.swift */; };
@@ -238,7 +238,8 @@
 		F1A8EF822855197C001E6786 /* aws-secret-key */ = {isa = PBXFileReference; lastKnownFileType = text; path = "aws-secret-key"; sourceTree = "<group>"; };
 		F1A8EF8428551A4E001E6786 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
 		F1A8EF8528551A4E001E6786 /* ssh.pub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh.pub; sourceTree = "<group>"; };
-		F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseManager.swift; sourceTree = "<group>"; };
+		F1A8EF8A2856070D001E6786 /* InAppPurchaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseManager.h; sourceTree = "<group>"; };
+		F1A8EF8B2856070D001E6786 /* InAppPurchaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseManager.m; sourceTree = "<group>"; };
 		F65A37F320652EF3005966DA /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		F65A37F520652F18005966DA /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		F65AC867202FA37500E4088A /* DVIA-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DVIA-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1320,7 +1321,8 @@
 			children = (
 				F6E64572202FBC6000884A43 /* Controller */,
 				F6E64575202FBC6000884A43 /* Objective-C Methods */,
-				F1A8EF8828551F7A001E6786 /* InAppPurchaseManager.swift */,
+				F1A8EF8A2856070D001E6786 /* InAppPurchaseManager.h */,
+				F1A8EF8B2856070D001E6786 /* InAppPurchaseManager.m */,
 			);
 			path = "Runtime Manipulation";
 			sourceTree = "<group>";
@@ -1724,7 +1726,6 @@
 				F6E6451C202FBB6700884A43 /* YDBCKChangeQueue.m in Sources */,
 				F6E6452D202FBB6700884A43 /* YapDatabaseHooksConnection.m in Sources */,
 				F6E6451A202FBB6700884A43 /* YDBCKChangeRecord.m in Sources */,
-				F1A8EF8928551F7A001E6786 /* InAppPurchaseManager.swift in Sources */,
 				F6E6451D202FBB6700884A43 /* YDBCKMergeInfo.m in Sources */,
 				F6E64544202FBB6700884A43 /* YapDatabaseFullTextSearchHandler.m in Sources */,
 				F6E6453C202FBB6700884A43 /* YapDatabaseViewTransaction.m in Sources */,
@@ -1771,6 +1772,7 @@
 				F6E645BD202FBC6000884A43 /* SideChannelDataLeakageViewController.swift in Sources */,
 				F6E6453D202FBB6700884A43 /* YapDatabaseViewTypes.m in Sources */,
 				F6E6455B202FBB6700884A43 /* CLIColor.m in Sources */,
+				F1A8EF8C2856070D001E6786 /* InAppPurchaseManager.m in Sources */,
 				F6E64524202FBB6700884A43 /* YapDatabaseExtensionTransaction.m in Sources */,
 				F6E645CA202FBC6000884A43 /* KeychainViewController.swift in Sources */,
 				F6E64529202FBB6700884A43 /* YapDatabaseFilteredViewTransaction.m in Sources */,

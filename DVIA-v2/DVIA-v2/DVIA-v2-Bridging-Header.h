@@ -16,6 +16,7 @@
 #include "SetSharedCookies.h"
 #include "anti.h"
 #include "DeviceInfo.h"
+#import "InAppPurchaseManager.h"
 
 #endif /* DVIA_Bridging_Header_h */
 

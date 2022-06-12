@@ -43,10 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             logger.debug("Current user info: \(jsonString))")
         }
         
+        if UserDefaults.standard.object(forKey: "isPremiumUser") == nil {
+            UserDefaults.standard.set(false, forKey: "isPremiumUser")
+        }
         let isPremiumUser = UserDefaults.standard.bool(forKey: "isPremiumUser")
         logger.log("isPremiumUser: \(isPremiumUser)")
         
-        logger.log("did unlock product1? \(InAppPurchaseManager.shared.hasItemBeenPurchased(itemID: 1))")
+        let id = "1"
+        logger.log("did unlock product with id: \(id)? \(InAppPurchaseManager.shared().hasItemBeenPurchased(id))")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
