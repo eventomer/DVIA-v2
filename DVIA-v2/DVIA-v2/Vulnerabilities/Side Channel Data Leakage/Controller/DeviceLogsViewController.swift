@@ -53,10 +53,9 @@ class DeviceLogsViewController: UIViewController, UITextFieldDelegate {
             phone: phoneNoTextField.text,
             email: emailTextField.text
         )
-        print("user saved: \(user)")
         DVIAUtilities.showAlert(title: "Success", message: "User signed up successfully, look for the logs now", viewController: self)
         if let jsonData = try? JSONEncoder().encode(user), let jsonString = String(data: jsonData, encoding: .utf8) {
-            os_log("Saved user info: %@", jsonString)
+            logger.log("Saved user info: \(jsonString)")
         }
         self.signUpButton.setTitle("Sign Up", for: .normal)
     }

@@ -15,6 +15,8 @@
 import UIKit
 import os.log
 
+let logger = Logger(subsystem: "com.webos.virtual-popit", category: "main")
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -38,13 +40,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             email: "tomer@example.com"
         )
         if let jsonData = try? JSONEncoder().encode(user), let jsonString = String(data: jsonData, encoding: .utf8) {
-            os_log("Current user info: %@", jsonString)
+            logger.debug("Current user info: \(jsonString))")
         }
         
         let isPremiumUser = UserDefaults.standard.bool(forKey: "isPremiumUser")
-        os_log("isPremiumUser: \(isPremiumUser)")
+        logger.log("isPremiumUser: \(isPremiumUser)")
         
-        os_log("did unlock product1? \(InAppPurchaseManager.shared.hasItemBeenPurchased(itemID: 1))")
+        logger.log("did unlock product1? \(InAppPurchaseManager.shared.hasItemBeenPurchased(itemID: 1))")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
